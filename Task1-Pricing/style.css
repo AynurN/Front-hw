@@ -1,0 +1,110 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.header{
+ padding: 10px 10px ;
+ margin-right:0 ;
+ box-shadow:  0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+.logo{
+   display: inline;
+   color: grey;
+}
+.nav-items{
+    margin-left: 900px;
+    display: inline;
+}
+.header li{
+    display: inline;
+    margin-left: 6px;
+    color: gray;
+}
+#button{
+    color: rgb(75, 147, 230);
+    border-radius: 2px;
+    border-color: rgb(75, 147, 230);
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+#head{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.main{
+    margin:0 450px;
+    width: 500px;
+}
+ .boxes{
+    display: flex;
+    justify-content: center;
+} 
+.box{
+    width: 200px;
+    height: 230px;
+    background-color:#fff;
+    display: inline-block;
+    margin: 10px; 
+    align-items: center;
+    text-align: center; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+    
+}
+.price{
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.desc{
+    margin-top: 1px;
+    font-size: 13px;
+}
+.boxes h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #332b2b;
+    align-items: center;
+}
+.sign-button{
+    color: rgb(75, 147, 230);
+    border-radius: 2px;
+    border-color: rgb(75, 147, 230);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #fff;
+}
+.footer{
+    margin-left: 365px;
+    margin-right: 365px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-top:1px solid rgb(189, 189, 189);
+}
+.elements{
+    width: 300px;
+    height: 230px;
+    display: inline-block;
+    margin: 10px; 
+    align-items: center;
+    text-align: left; 
+    padding: 40px;
+    padding-top: 0px;
+}
+.elements h5{
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+.elements p{
+    margin-top: 0px;
+    font-size: 10px;
+    padding-right: 20px;
+}

@@ -1,0 +1,15 @@
+.container-fluid{
+    padding-inline: 200px;
+    margin-top: 0;
+    box-shadow:  0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+
+}
+.card{
+    margin:15px;
+    width: 280px !important;
+}
+.card img{
+    height: 300px;
+}
