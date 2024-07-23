@@ -1,0 +1,61 @@
+.header .container{
+    background-color: #3e404b;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1349px;
+  z-index: 100;
+}
+
+.header .nav-link{
+    color: white;
+}
+.header .fs-4{
+    color: white;
+}
+.header .nav-item :hover{
+    background-color: orangered  !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+.btn{
+    padding: 20px !important;
+}
+.btn :hover{
+    background-color: orangered !important;
+}
+footer{
+    background-color: #3e404b  !important;
+    color: white !important;
+}
+.card img{
+    height: 400px;
+    object-fit: cover;
+}
+.list2 li{
+    margin-block: 15px !important;
+}
+.buttons{
+    display: flex;
+     margin: 50px;
+}
+.buttons button{
+    font-size: 20px;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    margin-inline: 30px;
+    padding:10px ;
+    border-width: 1px;
+}
+.buttons :hover{
+    background-color: orangered !important;
+    color: white !important;
+}
+.buttons i{
+    font-size: 30px;
+}
