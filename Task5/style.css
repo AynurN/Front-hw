@@ -1,0 +1,11 @@
+.light-mode {
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: rgb(73, 71, 71);
+}
+
+.dark-mode .header .container-fluid {
+    background-color: gray;
+}
