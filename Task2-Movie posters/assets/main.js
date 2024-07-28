@@ -19,7 +19,7 @@ fetch(listURL)
             <li class="list-group-item">Language: ${element.language}</li>
           </ul>
           <div class="card-body">
-            <a href="${element.officialSite}" ><button type="button" class="btn btn-primary" style="margin-bottom:5px;">Go to website</button></a>
+            <a href="${element.url}" ><button type="button" class="btn btn-primary" style="margin-bottom:5px;">Go to website</button></a>
             <button type="button" class="detail btn btn-success" id="${element.id}">Go to detail</button>
           </div>
         </div>
@@ -49,7 +49,7 @@ fetch(listURL)
                   <p><span style="font-weight: bold;">Premiere: ${data.premiered}</span></p>
                   <p><span style="font-weight: bold;">Ended: ${data.ended}</span></p>
                   <div class="buttons" style="display: flex;">
-                    <a href="${data.officialSite}" style="margin-right: 5px;"><button type="button" class="btn btn-primary">Go to website</button></a>
+                    <a href="${data.url}" style="margin-right: 5px;"><button type="button" class="btn btn-primary">Go to website</button></a>
                     <button type="button" id="back" class=" btn btn-success">Go back</button>
                   </div>
                 </div>
