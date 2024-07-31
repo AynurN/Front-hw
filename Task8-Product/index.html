@@ -8,17 +8,28 @@
     <title>Products</title>
 </head>
 <body style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-    <h3>Fakestore Product Catalog</h3>
-    <div class="main" style="display: flex; flex-direction: column; align-items: center;">
-        <form action="">
-            <select name="" id="categories" aria-placeholder="Select a category"> 
-                <option value=""> Select a category</option>      
-            </select>
-            <input type="text" id="input" placeholder="Filter product by name">
+    <div id="user-login"  style="display: flex; flex-direction: column; align-items: center;">
+        <h1>Fake Store Login Page</h1>
+        <form action="" style="display: flex ;">
+           <h4 style="margin-right: 5px;">Username:</h4>
+            <input type="text" id="input-name" placeholder="Filter product by name" style="margin-right: 5px;">
+            <h4 style="margin-right: 5px;">Password:</h4>
+            <input type="text" id="input-pass" placeholder="Filter product by name">
+            <button class="btn btn-success" style="margin-left: 5px;">Login</button>
         </form>
-        <div id="products">
-           
-        </div>
+       
+    </div>
+    <div id="catalog" style="display: none;"><h3>Fakestore Product Catalog</h3>
+        <div class="main" style="display: flex; flex-direction: column; align-items: center;">
+            <form action="">
+                <select name="" id="categories" aria-placeholder="Select a category"> 
+                    <option value=""> Select a category</option>      
+                </select>
+                <input type="text" id="input" placeholder="Filter product by name">
+            </form>
+            <div id="products">
+            </div></div>
+
     </div>
     <script src="./assets/main.js"></script>
 </body>

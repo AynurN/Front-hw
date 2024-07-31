@@ -1,9 +1,19 @@
 const catURL="https://fakestoreapi.com/products/categories"
 const proURL="https://fakestoreapi.com/products/category/"
+const userURL="https://fakestoreapi.com/users"
 let  categories=document.getElementById("categories");
 let  input=document.getElementById("input")
 let product=document.getElementById("products")
-fetch(catURL)
+let userName=document.getElementById("input-name")
+let passWord=document.getElementById("input-pass")
+let catalog=document.getElementById("catalog")
+fetch(userURL)
+.then(response=> response.json())
+.then(data=>
+   data.forEach(element=>{
+      if(userName.input==element.id && passWord.input==element.username )
+    {  catalog.style.display="flex";
+        fetch(catURL)
  .then(response=> response.json())
  .then(data=>
     data.forEach(element => {
@@ -57,3 +67,7 @@ fetch(catURL)
         });
       });
   });
+
+      }
+   })
+)
