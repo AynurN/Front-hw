@@ -5,14 +5,19 @@ let inputBtn=document.getElementById("inputBtn")
 let genreSelect=document.getElementById("genre")
 let movies=[];
 let genres=[];
+let uniqueGenres=[];
 fetch(listURL)
   .then(response => response.json())
   .then(data => {
     data.forEach(element => {
       movies.push(element);
-      genres.push(element.genres.filter((value, index, array) => array.indexOf(value) === index))
+      element.genres.forEach(genre=>{
+        genres.push(genre);
+      })
+      
     })
-    genres.forEach(element=>{
+    uniqueGenres= genres.filter((value, index, array) => array.indexOf(value) === index);
+    uniqueGenres.forEach(element=>{
       let option=document.createElement("option");
       option.value=element;
       option.innerText=element;
@@ -51,6 +56,16 @@ fetch(listURL)
   e.preventDefault();
   items.innerHTML="";
      displayMovies(filteredMovies);
+    })
+    genre.addEventListener("change", function(e){
+      e.preventDefault();
+      if(genre.value=="genres"){
+        displayMovies(movies)
+      }
+      else{
+        displayMovies(movies.filter(x=>x.genres.includes(genre.value)));
+      }
+     
     })
 
  
