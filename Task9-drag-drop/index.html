@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: space-around; align-items: center;">
+    <div id="mixed" style="background-color: white; width: 280px; height: 40px; border-color:yellow; border-style: solid; display: flex; justify-content: space-around;">   
+        <div draggable="true" data-target-id="f" class="draggableDiv" > <img src="./images/apple.png" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="f" class="draggableDiv"> <img src="./images/cherry.png" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="f"class="draggableDiv" > <img src="./images/grape.png" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="f" class="draggableDiv" > <img src="./images/strawberry.png" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="v" class="draggableDiv"> <img src="./images/brocolli.png" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="v" class="draggableDiv" > <img src="./images/cucumber.jfif" alt="" style="width: 40px;"></div>
+        <div draggable="true" data-target-id="v"  class="draggableDiv"> <img src="./images/tomato.svg" alt="" style="width: 40px;"></div>
+       
+    </div>
+    <div id="sorted" style="display: flex; flex-direction: column;">
+        <div data-id="f" style="border: 2px solid blue; width: 200px; height: 40px; margin-bottom: 5px; " id="dropZoneFruit" dropzone="">
+        </div>
+        <div data-id="v" style="border: 2px solid rgb(0, 255, 13); width: 200px; height: 40px; " id="dropZoneVeg" dropzone="true">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
